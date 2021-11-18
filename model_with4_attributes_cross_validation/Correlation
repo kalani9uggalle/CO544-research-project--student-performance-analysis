@@ -1,0 +1,45 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CorrelationAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     CEEData
+Instances:    666
+Attributes:   12
+              Performance
+              Gender
+              Caste
+              coaching
+              time
+              Class_ten_education
+              twelve_education
+              medium
+              Class_ X_Percentage
+              Class_XII_Percentage
+              Father_occupation
+              Mother_occupation
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 1 Performance):
+	Correlation Ranking Filter
+Ranked attributes:
+ 0.2173   3 Caste
+ 0.108   10 Class_XII_Percentage
+ 0.0957   9 Class_ X_Percentage
+ 0.0518   4 coaching
+ 0.0504   6 Class_ten_education
+ 0.0462   8 medium
+ 0.0382   5 time
+ 0.0372  11 Father_occupation
+ 0.0319   2 Gender
+ 0.0292  12 Mother_occupation
+ 0.028    7 twelve_education
+
+Selected attributes: 3,10,9,4,6,8,5,11,2,12,7 : 11
+

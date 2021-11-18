@@ -1,0 +1,36 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.WrapperSubsetEval -B weka.classifiers.trees.J48 -F 5 -T 0.01 -R 1 -E DEFAULT -- -C 0.25 -M 2
+Search:       weka.attributeSelection.GreedyStepwise -T -1.7976931348623157E308 -N -1 -num-slots 1
+Relation:     CEEData-weka.filters.unsupervised.attribute.Remove-R2,5,7-8,11-12
+Instances:    666
+Attributes:   6
+              Performance
+              Caste
+              coaching
+              Class_ten_education
+              Class_ X_Percentage
+              Class_XII_Percentage
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Greedy Stepwise (forwards).
+	Start set: no attributes
+	Merit of best subset found:    0.543
+
+Attribute Subset Evaluator (supervised, Class (nominal): 1 Performance):
+	Wrapper Subset Evaluator
+	Learning scheme: weka.classifiers.trees.J48
+	Scheme options: -C 0.25 -M 2 
+	Subset evaluation: classification accuracy
+	Number of folds for accuracy estimation: 5
+
+Selected attributes: 2,3,4 : 3
+                     Caste
+                     coaching
+                     Class_ten_education
+
